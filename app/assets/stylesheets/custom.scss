@@ -66,11 +66,10 @@ p {
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
-}
-
-#logo:hover {
-  color: silver;
-  text-decoration: none;
+  &:hover {
+    color: silver;
+    text-decoration: none;
+  }
 }
 
 li .header-list {
@@ -79,6 +78,15 @@ li .header-list {
   &:hover {
     color: silver !important;
   }
+}
+
+#dropdown-title {
+  background-color: teal;
+}
+
+li .dropdown-header {
+  background-color: rgba(200, 200, 200, 0.5);
+  font-weight: bold;
 }
 
 /* デバッグウインドウ */
