@@ -1,4 +1,8 @@
 class UsersController < ApplicationController
+  before_action :set_user, only: %i(show edit update destroy)
+  before_action :logged_in_user, only: %i(index show edit update destroy)
+  before_action :current_user, only: %i(edit update)
+  
   
   def show
     @user = User.find(params[:id])
